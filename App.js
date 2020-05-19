@@ -10,20 +10,20 @@ import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 import AppButton from './app/components/AppButton';
 
 export default function App() {
-  return (
-    <View style={{
-      backgroundColor: "#f8f4f4",
-      padding: 20,
-      paddingTop: 100,
-    }}>
-      <Card
-        title="Red jacket for sale"
-        subTitle="$100"
-        image={require("./app/assets/jacket.jpg")}
-      />
-    </View>
-  );
-  // return <ListingDetailsScreen />
+  // return (
+  //   <View style={{
+  //     backgroundColor: "#f8f4f4",
+  //     padding: 20,
+  //     paddingTop: 100,
+  //   }}>
+  //     <Card
+  //       title="Red jacket for sale"
+  //       subTitle="$100"
+  //       image={require("./app/assets/jacket.jpg")}
+  //     />
+  //   </View>
+  // );
+  return <ListingDetailsScreen />
   // return <Card />
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
