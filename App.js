@@ -16,16 +16,16 @@ import Icon from './app/components/Icon';
 import colors from './app/config/colors';
 
 export default function App() {
-  return (
-    <Screen>
-      <ListItem
-        title="My title"
-        description="My description"
-        ImageComponent={<Icon name="email" />}
-      />
-    </Screen>
+  // return (
+  //   <Screen>
+  //     <ListItem
+  //       title="My title"
+  //       description="My description"
+  //       ImageComponent={<Icon name="email" />}
+  //     />
+  //   </Screen>
 
-  );
+  // );
 
   // return (
   //   <View style={{
@@ -42,7 +42,7 @@ export default function App() {
   // );
   // return <ListingDetailsScreen />
   // return <Card />
-  // return <MyAccountScreen />;
+  return <MyAccountScreen />;
   // return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
