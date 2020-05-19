@@ -11,6 +11,11 @@ function ListingDetailsScreen(props) {
             <View style={styles.detailsContainer}>
                 <AppText style={styles.title}>Red jacket for sale</AppText>
                 <AppText style={styles.price}>$100</AppText>
+                {/* <ListItem
+                    image={require("../assets/mosh.jpg")}
+                    title="Nacho Donovan"
+                    subTitle="5 listings"
+                /> */}
             </View>
         </View>
     );
