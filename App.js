@@ -7,11 +7,21 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import AppText from './app/components/AppText'
 import Card from './app/components/Card';
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
+import AppButton from './app/components/AppButton';
 
 export default function App() {
-  return <ListingDetailsScreen />
+  // return (
+  //   <View style={{
+  //     flex: 1,
+  //     justifyContent: "center",
+  //     alignItems: "center"
+  //   }}>
+  //     <AppButton title="Login" onPress={() => console.log('LOGIN pressed')} />
+  //   </View>
+  // );
+  // return <ListingDetailsScreen />
   // return <Card />
-  // return <WelcomeScreen />
+  return <WelcomeScreen />;
   // return <ViewImageScreen />
   // return (
   //   <View style={{
