@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Platform } from 'react-native';
+import { View, Text, Platform, TextInput } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -17,6 +17,17 @@ import colors from './app/config/colors';
 import ListingsScreen from './app/screens/ListingsScreen';
 
 export default function App() {
+  return (
+    <Screen>
+      <TextInput
+        placeholder="First Name"
+        style={{
+          borderBottomColor: "#ccc",
+          borderBottomWidth: 1,
+        }}
+      />
+    </Screen>
+  );
   // return (
   //   <Screen>
   //     <ListItem
@@ -44,7 +55,7 @@ export default function App() {
   // return <ListingDetailsScreen />
   // return <Card />
   // return <MyAccountScreen />;
-  return <ListingsScreen />;
+  // return <ListingsScreen />;
   // return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
