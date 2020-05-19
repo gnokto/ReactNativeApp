@@ -17,6 +17,42 @@ const messages = [
         title: 'T2',
         description: 'D2',
         image: require('../assets/mosh.jpg')
+    },
+    {
+        id: 3,
+        title: 'T3',
+        description: 'D3',
+        image: require('../assets/mosh.jpg')
+    },
+    {
+        id: 4,
+        title: 'T4',
+        description: 'D4',
+        image: require('../assets/mosh.jpg')
+    },
+    {
+        id: 5,
+        title: 'T1',
+        description: 'D1',
+        image: require('../assets/mosh.jpg')
+    },
+    {
+        id: 6,
+        title: 'T2',
+        description: 'D2',
+        image: require('../assets/mosh.jpg')
+    },
+    {
+        id: 7,
+        title: 'T3',
+        description: 'D3',
+        image: require('../assets/mosh.jpg')
+    },
+    {
+        id: 8,
+        title: 'T4',
+        description: 'D4',
+        image: require('../assets/mosh.jpg')
     }
 ]
 
@@ -30,7 +66,8 @@ function MessagesScreen(props) {
                     <ListItem
                         title={item.title}
                         description={item.description}
-                        image={item.image} />
+                        image={item.image}
+                        onPress={() => console.log("Message selected", item)} />
                 }
                 ItemSeparatorComponent={ListItemSeparator}
             />
