@@ -9,6 +9,7 @@ import Card from './app/components/Card';
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 import AppButton from './app/components/AppButton';
 import ListItem from './app/components/ListItem';
+import MessagesScreen from './app/screens/MessagesScreen';
 
 export default function App() {
   // return (
@@ -26,8 +27,9 @@ export default function App() {
   // );
   // return <ListingDetailsScreen />
   // return <Card />
+  return <MessagesScreen />;
   // return <WelcomeScreen />;
-  return <ViewImageScreen />
+  // return <ViewImageScreen />
   // return (
   //   <View style={{
   //     flex: 1,

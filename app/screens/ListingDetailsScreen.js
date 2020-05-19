@@ -16,7 +16,7 @@ function ListingDetailsScreen(props) {
                     <ListItem
                         image={require("../assets/mosh.jpg")}
                         title="Nacho Donovan"
-                        subTitle="5 listings"
+                        description="5 listings"
                     />
                 </View>
             </View>

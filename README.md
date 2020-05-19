@@ -7,6 +7,7 @@ node -v 12 or higher
 
 # Setup / Installation
 sudo npm i -g expo-cli
+npm i expo-constants
 Install Expo Client on AppStore and Google Play
 Install iOs simulator - https://docs.expo.io/workflow/ios-simulator/
 Install Android simulator - https://docs.expo.io/workflow/android-studio-emulator/
