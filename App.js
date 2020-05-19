@@ -10,8 +10,24 @@ import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 import AppButton from './app/components/AppButton';
 import ListItem from './app/components/ListItem';
 import MessagesScreen from './app/screens/MessagesScreen';
+import MyAccountScreen from './app/screens/MyAccountScreen';
+import Screen from './app/components/Screen';
+import Icon from './app/components/Icon';
+import colors from './app/config/colors';
 
 export default function App() {
+  return (
+    <Screen>
+      <Icon
+        name="email"
+        size={50}
+        backgroundColor="red"
+        iconColor="white"
+      />
+    </Screen>
+
+  );
+
   // return (
   //   <View style={{
   //     backgroundColor: "#f8f4f4",
@@ -27,7 +43,8 @@ export default function App() {
   // );
   // return <ListingDetailsScreen />
   // return <Card />
-  return <MessagesScreen />;
+  // return <MyAccountScreen />;
+  // return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
   // return (
