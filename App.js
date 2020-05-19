@@ -11,21 +11,6 @@ import AppButton from './app/components/AppButton';
 import ListItem from './app/components/ListItem';
 
 export default function App() {
-  return (
-    <View style={{
-      // justifyContent: "center",
-      // alignItems: "center"
-      marginTop: 200,
-      // backgroundColor: "grey"
-    }}>
-      <ListItem
-        image={require("./app/assets/mosh.jpg")}
-        title="Nacho Donovan"
-        subTitle="5 listings"
-      />
-    </View>
-  );
-
   // return (
   //   <View style={{
   //     backgroundColor: "#f8f4f4",
@@ -39,7 +24,7 @@ export default function App() {
   //     />
   //   </View>
   // );
-  // return <ListingDetailsScreen />
+  return <ListingDetailsScreen />
   // return <Card />
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
