@@ -64,6 +64,7 @@ function MessagesScreen(props) {
         // Delete teh message from messages
         const newMessages = messages.filter(m => m.id !== message.id)
         setMessages(newMessages)
+
         // TODO Call the server
     }
 
