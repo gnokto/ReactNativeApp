@@ -14,6 +14,7 @@ import MyAccountScreen from './app/screens/MyAccountScreen';
 import Screen from './app/components/Screen';
 import Icon from './app/components/Icon';
 import colors from './app/config/colors';
+import ListingsScreen from './app/screens/ListingsScreen';
 
 export default function App() {
   // return (
@@ -42,7 +43,8 @@ export default function App() {
   // );
   // return <ListingDetailsScreen />
   // return <Card />
-  return <MyAccountScreen />;
+  // return <MyAccountScreen />;
+  return <ListingsScreen />;
   // return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
