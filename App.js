@@ -24,10 +24,10 @@ export default function App() {
   //     />
   //   </View>
   // );
-  return <ListingDetailsScreen />
+  // return <ListingDetailsScreen />
   // return <Card />
   // return <WelcomeScreen />;
-  // return <ViewImageScreen />
+  return <ViewImageScreen />
   // return (
   //   <View style={{
   //     flex: 1,
