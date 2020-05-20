@@ -4,9 +4,8 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 
 import AppButton from '../components/AppButton';
-import AppErrorMessage from '../components/AppErrorMessage';
-import AppTextInput from '../components/AppTextInput';
 import Screen from '../components/Screen';
+import AppFormField from '../components/AppFormField';
 
 // validation schemma
 const validationSchema = Yup.object().shape({
@@ -27,33 +26,27 @@ function LoginScreen() {
                 onSubmit={(values) => console.log(values)}
                 validationSchema={validationSchema}
             >
-                {({ handleChange, handleSubmit, errors, setFieldTouched, touched }) => (
+                {({ handleSubmit }) => (
                     <>
-                        <AppTextInput
+                        <AppFormField
                             autoCapitalize="none"
                             autoCorrect={false}
                             icon="email"
-                            onChangeText={handleChange("email")}
-                            onBlur={() => setFieldTouched("email")}
                             keyboardType="email-address"
+                            name="email" //required
                             placeholder="Email"
                             textContentType="emailAddress" // only works on ios to allow keychain login
                         />
-                        <AppErrorMessage error={errors.email} visible={touched.email} />
-                        <AppTextInput
+                        <AppFormField
                             autoCapitalize="none"
                             autoCorrect={false}
                             icon="lock"
-                            onChangeText={handleChange("password")}
-                            onBlur={() => setFieldTouched("password")}
+                            name="password" //required
                             placeholder="Password"
                             secureTextEntry // true by default
                             textContentType="password" // only works on ios to allow keychain access
                         />
-                        <AppErrorMessage error={errors.password} visible={touched.password} />
-                        <AppButton
-                            title="Login"
-                            onPress={handleSubmit}
+                        <AppButton title="Login" onPress={handleSubmit}
                         />
                     </>
                 )}
