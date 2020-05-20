@@ -27,28 +27,30 @@ function LoginScreen() {
                 onSubmit={(values) => console.log(values)}
                 validationSchema={validationSchema}
             >
-                {({ handleChange, handleSubmit, errors }) => (
+                {({ handleChange, handleSubmit, errors, setFieldTouched, touched }) => (
                     <>
                         <AppTextInput
                             autoCapitalize="none"
                             autoCorrect={false}
                             icon="email"
                             onChangeText={handleChange("email")}
+                            onBlur={() => setFieldTouched("email")}
                             keyboardType="email-address"
                             placeholder="Email"
                             textContentType="emailAddress" // only works on ios to allow keychain login
                         />
-                        <AppErrorMessage error={errors.email} />
+                        <AppErrorMessage error={errors.email} visible={touched.email} />
                         <AppTextInput
                             autoCapitalize="none"
                             autoCorrect={false}
                             icon="lock"
                             onChangeText={handleChange("password")}
+                            onBlur={() => setFieldTouched("password")}
                             placeholder="Password"
                             secureTextEntry // true by default
                             textContentType="password" // only works on ios to allow keychain access
                         />
-                        <AppErrorMessage error={errors.password} />
+                        <AppErrorMessage error={errors.password} visible={touched.password} />
                         <AppButton
                             title="Login"
                             onPress={handleSubmit}
