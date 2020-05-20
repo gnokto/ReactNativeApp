@@ -1,15 +1,10 @@
 import React from 'react';
 import { StyleSheet, Image } from 'react-native';
-import { Formik } from 'formik';
 import * as Yup from 'yup';
 
-import AppButton from '../components/AppButton';
 import Screen from '../components/Screen';
-import AppFormField from '../components/AppFormField';
-import AppSubmitButton from '../components/AppSubmitButton';
-import AppForm from '../components/AppForm';
+import { AppForm, AppFormField, AppSubmitButton } from '../components/forms';
 
-// validation schemma
 const validationSchema = Yup.object().shape({
     email: Yup.string().required().email().label("Email"),
     password: Yup.string().required().min(4).label("Password")
@@ -46,7 +41,7 @@ function LoginScreen() {
                     secureTextEntry // true by default
                     textContentType="password" // only works on ios to allow keychain access
                 />
-                <AppSubmitButton title="Login2" />
+                <AppSubmitButton title="Login" />
             </AppForm>
         </Screen>
     );
