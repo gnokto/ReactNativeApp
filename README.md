@@ -14,8 +14,9 @@ Install Android simulator - https://docs.expo.io/workflow/android-studio-emulato
     MAC users need extra steps copying paths to ~./bash_profile or ~./bash_rc or ~./zsh_profile for Android Studio have a look at documentation link.
 
 # Extra libraries
-npm i expo-constants
-npm i formik@2.1.4
+npm i expo-constants - device available properties
+npm i formik@2.1.4 - form submission
+npm i yup@0.28.5 - form validation
 
 # Run app locally
 npm start or expo start
