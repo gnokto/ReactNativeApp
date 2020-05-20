@@ -15,22 +15,28 @@ import Screen from './app/components/Screen';
 import Icon from './app/components/Icon';
 import colors from './app/config/colors';
 import ListingsScreen from './app/screens/ListingsScreen';
+import AppTextInput from './app/components/AppTextInput';
 
 export default function App() {
   const [firstName, setFirstName] = useState('');
 
   return (
     <Screen>
-      <Text>{firstName}</Text>
-      <TextInput
-        onChangeText={text => setFirstName(text)}
-        placeholder="First Name"
-        style={{
-          borderBottomColor: "#ccc",
-          borderBottomWidth: 1,
-        }}
-      />
+      <AppTextInput placeholder="first name" icon="email" />
     </Screen>
+
+    // <Screen>
+    //   <Text>{firstName}</Text>
+    //   <TextInput
+    //     clearButtonMode="always"
+    //     onChangeText={text => setFirstName(text)}
+    //     placeholder="First Name"
+    //     style={{
+    //       borderBottomColor: "#ccc",
+    //       borderBottomWidth: 1,
+    //     }}
+    //   />
+    // </Screen>
   );
   // return (
   //   <Screen>
