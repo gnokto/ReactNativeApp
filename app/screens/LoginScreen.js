@@ -3,10 +3,10 @@ import { StyleSheet, Image } from 'react-native';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
-import Screen from '../components/Screen';
-import AppTextInput from '../components/AppTextInput';
 import AppButton from '../components/AppButton';
-import AppText from '../components/AppText';
+import AppErrorMessage from '../components/AppErrorMessage';
+import AppTextInput from '../components/AppTextInput';
+import Screen from '../components/Screen';
 
 // validation schemma
 const validationSchema = Yup.object().shape({
@@ -38,7 +38,7 @@ function LoginScreen() {
                             placeholder="Email"
                             textContentType="emailAddress" // only works on ios to allow keychain login
                         />
-                        <AppText style={{ color: "red" }}>{errors.email}</AppText>
+                        <AppErrorMessage error={errors.email} />
                         <AppTextInput
                             autoCapitalize="none"
                             autoCorrect={false}
@@ -48,7 +48,7 @@ function LoginScreen() {
                             secureTextEntry // true by default
                             textContentType="password" // only works on ios to allow keychain access
                         />
-                        <AppText style={{ color: "red" }}>{errors.password}</AppText>
+                        <AppErrorMessage error={errors.password} />
                         <AppButton
                             title="Login"
                             onPress={handleSubmit}
