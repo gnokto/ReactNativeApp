@@ -16,15 +16,20 @@ import Icon from './app/components/Icon';
 import colors from './app/config/colors';
 import ListingsScreen from './app/screens/ListingsScreen';
 import AppTextInput from './app/components/AppTextInput';
+import AppPicker from './app/components/AppPicker';
 
 export default function App() {
   const [isNew, setIsnew] = useState(false);
 
   return (
     <Screen>
-      <Switch value={isNew} onValueChange={(newValue) => setIsnew(newValue)} />
-      {/* on android the switch appears on the right corner on the screen */}
+      <AppPicker icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="Email" />
     </Screen>
+    // <Screen>
+    //   <Switch value={isNew} onValueChange={(newValue) => setIsnew(newValue)} />
+    //   {/* on android the switch appears on the right corner on the screen */}
+    // </Screen>
 
     // <Screen>
     //   <Text>{firstName}</Text>
