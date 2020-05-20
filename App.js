@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Platform, TextInput } from 'react-native';
+import { View, Text, Platform, TextInput, Switch } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -18,11 +18,12 @@ import ListingsScreen from './app/screens/ListingsScreen';
 import AppTextInput from './app/components/AppTextInput';
 
 export default function App() {
-  const [firstName, setFirstName] = useState('');
+  const [isNew, setIsnew] = useState(false);
 
   return (
     <Screen>
-      <AppTextInput placeholder="first name" icon="email" />
+      <Switch value={isNew} onValueChange={(newValue) => setIsnew(newValue)} />
+      {/* on android the switch appears on the right corner on the screen */}
     </Screen>
 
     // <Screen>
