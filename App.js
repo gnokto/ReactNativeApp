@@ -18,6 +18,7 @@ import ListingsScreen from './app/screens/ListingsScreen';
 import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
 import LoginScreen from './app/screens/LoginScreen';
+import RegisterScreen from './app/screens/RegisterScreen';
 
 
 const categories = [
@@ -30,7 +31,8 @@ export default function App() {
   const [category, setCategory] = useState(categories[1]);
 
   return (
-    <LoginScreen />
+    <RegisterScreen />
+    // <LoginScreen />
     // <Screen>
     //   <AppPicker
     //     selectedItem={category}
