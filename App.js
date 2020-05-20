@@ -25,45 +25,45 @@ import ListingEditScreen from './app/screens/ListingEditScreen';
 export default function App() {
   // const [category, setCategory] = useState(categories[1]);
 
-  return (
-    <ListingEditScreen />
-    // <LoginScreen />
-    // <Screen>
-    //   <AppPicker
-    //     selectedItem={category}
-    //     onSelectItem={item => setCategory(item)}
-    //     items={categories}
-    //     icon="apps"
-    //     placeholder="Category"
-    //   />
-    //   <AppTextInput icon="email" placeholder="Email" />
-    // </Screen>
-    // <Screen>
-    //   <Switch value={isNew} onValueChange={(newValue) => setIsnew(newValue)} />
-    //   {/* on android the switch appears on the right corner on the screen */}
-    // </Screen>
-
-    // <Screen>
-    //   <Text>{firstName}</Text>
-    //   <TextInput
-    //     clearButtonMode="always"
-    //     onChangeText={text => setFirstName(text)}
-    //     placeholder="First Name"
-    //     style={{
-    //       borderBottomColor: "#ccc",
-    //       borderBottomWidth: 1,
-    //     }}
-    //   />
-    // </Screen>
-  );
   // return (
-  //   <Screen>
-  //     <ListItem
-  //       title="My title"
-  //       description="My description"
-  //       ImageComponent={<Icon name="email" />}
-  //     />
-  //   </Screen>
+  // <ListingEditScreen />
+  // <LoginScreen />
+  // <Screen>
+  //   <AppPicker
+  //     selectedItem={category}
+  //     onSelectItem={item => setCategory(item)}
+  //     items={categories}
+  //     icon="apps"
+  //     placeholder="Category"
+  //   />
+  //   <AppTextInput icon="email" placeholder="Email" />
+  // </Screen>
+  // <Screen>
+  //   <Switch value={isNew} onValueChange={(newValue) => setIsnew(newValue)} />
+  //   {/* on android the switch appears on the right corner on the screen */}
+  // </Screen>
+
+  // <Screen>
+  //   <Text>{firstName}</Text>
+  //   <TextInput
+  //     clearButtonMode="always"
+  //     onChangeText={text => setFirstName(text)}
+  //     placeholder="First Name"
+  //     style={{
+  //       borderBottomColor: "#ccc",
+  //       borderBottomWidth: 1,
+  //     }}
+  //   />
+  // </Screen>
+  // return (
+  // <Screen>
+  //   <ListItem
+  //     title="My title"
+  //     description="My description"
+  //     IconComponent={<Icon name="email" />}
+  //   />
+  // </Screen>
+  // );
 
   // );
 
@@ -84,7 +84,7 @@ export default function App() {
   // return <Card />
   // return <MyAccountScreen />;
   // return <ListingsScreen />;
-  // return <MessagesScreen />;
+  return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
   // return (
