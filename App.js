@@ -19,19 +19,14 @@ import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
 import LoginScreen from './app/screens/LoginScreen';
 import RegisterScreen from './app/screens/RegisterScreen';
+import ListingEditScreen from './app/screens/ListingEditScreen';
 
-
-const categories = [
-  { label: "Furniture", value: 1 },
-  { label: "Clothing", value: 2 },
-  { label: "Cameras", value: 3 }
-];
 
 export default function App() {
-  const [category, setCategory] = useState(categories[1]);
+  // const [category, setCategory] = useState(categories[1]);
 
   return (
-    <RegisterScreen />
+    <ListingEditScreen />
     // <LoginScreen />
     // <Screen>
     //   <AppPicker
