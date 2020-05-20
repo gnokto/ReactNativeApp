@@ -17,6 +17,7 @@ import colors from './app/config/colors';
 import ListingsScreen from './app/screens/ListingsScreen';
 import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
+import LoginScreen from './app/screens/LoginScreen';
 
 
 const categories = [
@@ -29,16 +30,17 @@ export default function App() {
   const [category, setCategory] = useState(categories[1]);
 
   return (
-    <Screen>
-      <AppPicker
-        selectedItem={category}
-        onSelectItem={item => setCategory(item)}
-        items={categories}
-        icon="apps"
-        placeholder="Category"
-      />
-      <AppTextInput icon="email" placeholder="Email" />
-    </Screen>
+    <LoginScreen />
+    // <Screen>
+    //   <AppPicker
+    //     selectedItem={category}
+    //     onSelectItem={item => setCategory(item)}
+    //     items={categories}
+    //     icon="apps"
+    //     placeholder="Category"
+    //   />
+    //   <AppTextInput icon="email" placeholder="Email" />
+    // </Screen>
     // <Screen>
     //   <Switch value={isNew} onValueChange={(newValue) => setIsnew(newValue)} />
     //   {/* on android the switch appears on the right corner on the screen */}
