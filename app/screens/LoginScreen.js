@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 import AppButton from '../components/AppButton';
 import Screen from '../components/Screen';
 import AppFormField from '../components/AppFormField';
+import AppSubmitButton from '../components/AppSubmitButton';
 
 // validation schemma
 const validationSchema = Yup.object().shape({
@@ -26,7 +27,7 @@ function LoginScreen() {
                 onSubmit={(values) => console.log(values)}
                 validationSchema={validationSchema}
             >
-                {({ handleSubmit }) => (
+                {() => (
                     <>
                         <AppFormField
                             autoCapitalize="none"
@@ -46,8 +47,7 @@ function LoginScreen() {
                             secureTextEntry // true by default
                             textContentType="password" // only works on ios to allow keychain access
                         />
-                        <AppButton title="Login" onPress={handleSubmit}
-                        />
+                        <AppSubmitButton title="Login2" />
                     </>
                 )}
             </Formik>
