@@ -25,8 +25,13 @@ import ListingEditScreen from './app/screens/ListingEditScreen';
 export default function App() {
   // const [category, setCategory] = useState(categories[1]);
 
-  // return (
+  // return
+
+  // (
+
   // <ListingEditScreen />
+
+  // );
   // <LoginScreen />
   // <Screen>
   //   <AppPicker
@@ -87,6 +92,8 @@ export default function App() {
   return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
+  // return <ListingEditScreen />
+  // return <RegisterScreen />
   // return (
   //   <View style={{
   //     flex: 1,

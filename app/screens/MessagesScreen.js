@@ -39,8 +39,8 @@ const initialMessages = [
     },
     {
         id: 6,
-        title: 'T2',
-        description: 'D2',
+        title: 'T2sxsaxasxasxasskjhjdkhsajdjs hjsdhjkashdjadsh asdh jshdjkhds kjh asjdk sadakjshdkjasd ashdk haskjd sakd',
+        description: 'DT2sxsaxasxasxasskjhjdkhsajdjs hjsdhjkashdjadsh asdh jshdjkhds kjh asjdk sadakjshdkjasd ashdk haskjd sakd2',
         image: require('../assets/mosh.jpg')
     },
     {
