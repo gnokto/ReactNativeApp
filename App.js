@@ -88,8 +88,8 @@ export default function App() {
   // return <ListingDetailsScreen />
   // return <Card />
   // return <MyAccountScreen />;
-  // return <ListingsScreen />;
-  return <MessagesScreen />;
+  return <ListingsScreen />;
+  // return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
   // return <ListingEditScreen />
