@@ -12,8 +12,9 @@ function AppPicker({
     icon,
     items,
     onSelectItem,
+    numColumns = 1,
     placeholder,
-    PickerItemComponent = { PickerItem },
+    PickerItemComponent = PickerItem,
     selectedItem,
     width = '100%'
 }) {
@@ -46,9 +47,10 @@ function AppPicker({
                     <FlatList
                         data={items}
                         keyExtractor={item => item.value.toString()}
+                        numColumns={numColumns}
                         renderItem={({ item }) => (
                             <PickerItemComponent
-                                label={item.label}
+                                item={item}
                                 onPress={() => {
                                     setIsModalVisible(false);
                                     onSelectItem(item);

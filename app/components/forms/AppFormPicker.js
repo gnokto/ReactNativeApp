@@ -3,11 +3,15 @@ import { useFormikContext } from 'formik';
 
 import AppPicker from '../AppPicker';
 import AppErrorMessage from './AppErrorMessage';
-import AppCategoryPickerItem from '../AppCategoryPickerItem';
+import PickerItem from '../PickerItem';
+
+
 
 function AppFormPicker({
     items,
     name,
+    numColumns,
+    PickerItemComponent,
     placeholder,
     width
 }) {
@@ -17,8 +21,9 @@ function AppFormPicker({
         <>
             <AppPicker
                 items={items}
+                numColumns={numColumns}
                 onSelectItem={(item) => setFieldValue(name, item)}
-                PickerItemComponent={AppCategoryPickerItem}
+                PickerItemComponent={PickerItemComponent}
                 placeholder={placeholder}
                 selectedItem={values[name]}
                 width={width}
