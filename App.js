@@ -89,10 +89,10 @@ export default function App() {
   // return <Card />
   // return <MyAccountScreen />;
   // return <ListingsScreen />;
-  return <MessagesScreen />;
+  // return <MessagesScreen />;
   // return <WelcomeScreen />;
   // return <ViewImageScreen />
-  // return <ListingEditScreen />
+  return <ListingEditScreen />
   // return <RegisterScreen />
   // return (
   //   <View style={{
