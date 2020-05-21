@@ -1,0 +1,6 @@
+{
+    // treat this project as a javascript object
+    "exclude": [
+        "node_modules"
+    ]
+}
